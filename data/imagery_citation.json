@@ -1,0 +1,272 @@
+{
+ "bayview": [
+  {
+   "SRC_DATE2": "11/4/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  },
+  {
+   "SRC_DATE2": "11/4/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE2": "11/4/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {},
+  {},
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20251104",
+   "SRC_DATE2": "11/4/2025",
+   "SRC_RES": "0.34",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "LG02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "SRC_RES": "15",
+   "SRC_ACC": "12",
+   "SRC_DESC": "TerraColor NextGen",
+   "NICE_NAME": "TerraColor NextGen",
+   "NICE_DESC": "Earthstar Geographics",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "SRC_RES": "15",
+   "SRC_ACC": "12",
+   "SRC_DESC": "TerraColor NextGen",
+   "NICE_NAME": "TerraColor NextGen",
+   "NICE_DESC": "Earthstar Geographics",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  }
+ ],
+ "arrowhead": [
+  {
+   "SRC_DATE2": "5/20/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  },
+  {
+   "SRC_DATE2": "5/20/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE2": "5/20/2025",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {},
+  {},
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "20250520",
+   "SRC_DATE2": "5/20/2025",
+   "SRC_RES": "0.5",
+   "SRC_ACC": "8.47",
+   "SRC_DESC": "WV02",
+   "NICE_NAME": "Vivid",
+   "NICE_DESC": "Vantor",
+   "MinMapLevel": "12",
+   "MaxMapLevel": "19"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "SRC_RES": "15",
+   "SRC_ACC": "12",
+   "SRC_DESC": "TerraColor NextGen",
+   "NICE_NAME": "TerraColor NextGen",
+   "NICE_DESC": "Earthstar Geographics",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  },
+  {
+   "SRC_DATE": "Null",
+   "SRC_DATE2": "Null",
+   "SRC_RES": "15",
+   "SRC_ACC": "12",
+   "SRC_DESC": "TerraColor NextGen",
+   "NICE_NAME": "TerraColor NextGen",
+   "NICE_DESC": "Earthstar Geographics",
+   "MinMapLevel": "0",
+   "MaxMapLevel": "11"
+  }
+ ]
+}

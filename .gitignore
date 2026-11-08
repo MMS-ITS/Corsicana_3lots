@@ -1,0 +1,10 @@
+# large raw downloads (re-fetched by the scripts)
+data/flood.json
+data/bathymetry.json
+data/parcels.json
+data/stratmap_raw_*.json
+# intermediate HTML (embeds local font paths)
+out/report.html
+__pycache__/
+*.pyc
+.venv/
