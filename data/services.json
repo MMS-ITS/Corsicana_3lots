@@ -1,0 +1,1318 @@
+{
+ "bayview": {
+  "hospital": [
+   {
+    "name": "Integrity Urgent Care",
+    "addr": "2901 W 7th Ave, Corsicana, Texas, 75110",
+    "type": "Hospital",
+    "lon": -96.4933824,
+    "lat": 32.0769195,
+    "crow_mi": 17.1,
+    "drive_mi": 19.0,
+    "drive_min": 30
+   },
+   {
+    "name": "Hope Center",
+    "addr": "3124 W State Highway 22, Corsicana, Texas, 75110",
+    "type": "Hospital",
+    "lon": -96.5022736,
+    "lat": 32.085289,
+    "crow_mi": 17.7,
+    "drive_mi": 19.7,
+    "drive_min": 31
+   }
+  ],
+  "clinic": [
+   {
+    "name": "Kontraband Interdiction",
+    "addr": "9011 Champions Way, Streetman, Texas, 75859",
+    "type": "Medical Clinic",
+    "lon": -96.2051776,
+    "lat": 31.9550964,
+    "crow_mi": 3.2,
+    "drive_mi": 18.6,
+    "drive_min": 34
+   },
+   {
+    "name": "Enola Nelson",
+    "addr": "100 SE 4th St, Kerens, Texas, 75144",
+    "type": "Medical Clinic",
+    "lon": -96.2264719,
+    "lat": 32.1280749,
+    "crow_mi": 8.9,
+    "drive_mi": 14.6,
+    "drive_min": 25
+   }
+  ],
+  "pharmacy": [
+   {
+    "name": "Hilliard Drug Store",
+    "addr": "1001 NW 2nd St, Ste 300, Kerens, Texas, 75144",
+    "type": "Pharmacy",
+    "lon": -96.240516,
+    "lat": 32.130733,
+    "crow_mi": 9.1,
+    "drive_mi": 15.8,
+    "drive_min": 27
+   },
+   {
+    "name": "Walmart Pharmacy",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75109",
+    "type": "Pharmacy",
+    "lon": -96.403781,
+    "lat": 32.101047,
+    "crow_mi": 13.0,
+    "drive_mi": 19.2,
+    "drive_min": 28
+   }
+  ],
+  "grocery": [
+   {
+    "name": "Winkler Kountry Store",
+    "addr": "10620 Fm 416, Streetman, Texas, 75859",
+    "type": "Grocery",
+    "lon": -96.207758,
+    "lat": 31.93836,
+    "crow_mi": 4.3,
+    "drive_mi": 17.9,
+    "drive_min": 30
+   },
+   {
+    "name": "Food Rite",
+    "addr": "1001 NW 2nd St, Ste 400, Kerens, Texas, 75144",
+    "type": "Grocery",
+    "lon": -96.241016,
+    "lat": 32.130594,
+    "crow_mi": 9.1,
+    "drive_mi": 15.9,
+    "drive_min": 27
+   }
+  ],
+  "department_store": [
+   {
+    "name": "Walmart Photo Center",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75109",
+    "type": "Department Store",
+    "lon": -96.403739,
+    "lat": 32.101056,
+    "crow_mi": 13.0,
+    "drive_mi": 19.2,
+    "drive_min": 28
+   },
+   {
+    "name": "Corsicana Tx Sears Appliance Repair",
+    "addr": "836 W 7th Ave, Corsicana, Texas, 75110",
+    "type": "Department Store",
+    "lon": -96.471845,
+    "lat": 32.087918,
+    "crow_mi": 16.1,
+    "drive_mi": 17.5,
+    "drive_min": 28
+   }
+  ],
+  "convenience": [
+   {
+    "name": "Baker's Lakeshore Market",
+    "addr": "10414 S US Highway 287, Corsicana, Texas, 75109",
+    "type": "Convenience Store",
+    "lon": -96.217002,
+    "lat": 32.001817,
+    "crow_mi": 0.1,
+    "drive_mi": 0.1,
+    "drive_min": 0
+   },
+   {
+    "name": "I 45 Quick Stop",
+    "addr": "Streetman, Texas, 75859",
+    "type": "Convenience Store",
+    "lon": -96.347546,
+    "lat": 31.88089,
+    "crow_mi": 11.3,
+    "drive_mi": 25.6,
+    "drive_min": 36
+   }
+  ],
+  "gas": [
+   {
+    "name": "Valero Energy",
+    "addr": "10414 S Highway 287, Corsicana, Texas, 75109",
+    "type": "Gas Station",
+    "lon": -96.217049,
+    "lat": 32.001725,
+    "crow_mi": 0.1,
+    "drive_mi": 0.1,
+    "drive_min": 0
+   },
+   {
+    "name": "Winkler Country Store And Cafe",
+    "addr": "10642 Fm 416, Streetman, Texas, 75859",
+    "type": "Gas Station",
+    "lon": -96.207251,
+    "lat": 31.938214,
+    "crow_mi": 4.3,
+    "drive_mi": 17.9,
+    "drive_min": 30
+   }
+  ],
+  "bank": [
+   {
+    "name": "Community National Bank & Trust of Texas",
+    "addr": "548 Fm 416, Streetman, Texas, 75859",
+    "type": "Bank",
+    "lon": -96.181184,
+    "lat": 31.939302,
+    "crow_mi": 4.7,
+    "drive_mi": 16.3,
+    "drive_min": 27
+   },
+   {
+    "name": "Prosperity Bank",
+    "addr": "1101 NW 2nd St, Kerens, Texas, 75144",
+    "type": "Bank",
+    "lon": -96.241826,
+    "lat": 32.130779,
+    "crow_mi": 9.1,
+    "drive_mi": 15.9,
+    "drive_min": 27
+   }
+  ],
+  "restaurant": [
+   {
+    "name": "Oak Cove Cafe",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Restaurant",
+    "lon": -96.217056,
+    "lat": 32.001741,
+    "crow_mi": 0.1,
+    "drive_mi": 0.1,
+    "drive_min": 0
+   },
+   {
+    "name": "Oak Cove marina grill",
+    "addr": "10411 Us - 287, Corsicana, Texas, 75109",
+    "type": "Restaurant",
+    "lon": -96.21732,
+    "lat": 32.002476,
+    "crow_mi": 0.2,
+    "drive_mi": 0.2,
+    "drive_min": 1
+   }
+  ],
+  "cafe": [
+   {
+    "name": "Sunset Cove Cafe",
+    "addr": "3001 Fm 2859, Corsicana, Texas, 75109",
+    "type": "Coffee Shop",
+    "lon": -96.263476,
+    "lat": 32.048333,
+    "crow_mi": 4.3,
+    "drive_mi": 6.9,
+    "drive_min": 20
+   },
+   {
+    "name": "Starbucks",
+    "addr": "2004 S US Highway 287, Corsicana, Texas, 75110",
+    "type": "Coffee Shop",
+    "lon": -96.447179,
+    "lat": 32.075507,
+    "crow_mi": 14.5,
+    "drive_mi": 15.3,
+    "drive_min": 24
+   }
+  ],
+  "bar": [
+   {
+    "name": "Opie and Yvetta's Lake Resort",
+    "addr": "340 Chelsea Dr, Streetman, Texas, 75859",
+    "type": "Bar or Pub",
+    "lon": -96.171303,
+    "lat": 31.950486,
+    "crow_mi": 4.3,
+    "drive_mi": 16.3,
+    "drive_min": 28
+   },
+   {
+    "name": "Big 6's BAR-B-QUE",
+    "addr": "105 N Colket St, Kerens, Texas, 75144",
+    "type": "Bar or Pub",
+    "lon": -96.228064,
+    "lat": 32.132446,
+    "crow_mi": 9.2,
+    "drive_mi": 14.9,
+    "drive_min": 26
+   }
+  ],
+  "cinema": [],
+  "home_improvement": [
+   {
+    "name": "Aggie General",
+    "addr": "8803 S Highway 287, Corsicana, Texas, 75109",
+    "type": "Home Improvement Store",
+    "lon": -96.285778,
+    "lat": 32.010385,
+    "crow_mi": 4.1,
+    "drive_mi": 4.3,
+    "drive_min": 7
+   },
+   {
+    "name": "Richland Chambers Hardware & Lumber",
+    "addr": "381 Fm 416, Streetman, Texas, 75859",
+    "type": "Home Improvement Store",
+    "lon": -96.151646,
+    "lat": 31.940866,
+    "crow_mi": 5.6,
+    "drive_mi": 14.5,
+    "drive_min": 23
+   }
+  ],
+  "hardware": [],
+  "fire_station": [
+   {
+    "name": "287 R C Fire and Rescue VFD",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Fire Station",
+    "lon": -96.227173,
+    "lat": 31.997803,
+    "crow_mi": 0.6,
+    "drive_mi": 0.8,
+    "drive_min": 2
+   },
+   {
+    "name": "Southern Oaks Volunteer Fire Department",
+    "addr": "120 Southern Oaks Dr, Streetman, Texas, 75859",
+    "type": "Fire Station",
+    "lon": -96.169628,
+    "lat": 31.942596,
+    "crow_mi": 4.8,
+    "drive_mi": 15.6,
+    "drive_min": 26
+   }
+  ],
+  "police": [
+   {
+    "name": "Kerens Police Department",
+    "addr": "200 S Colket St, Kerens, Texas, 75144",
+    "type": "Police Station",
+    "lon": -96.227706,
+    "lat": 32.130175,
+    "crow_mi": 9.0,
+    "drive_mi": 14.8,
+    "drive_min": 26
+   },
+   {
+    "name": "Police Department",
+    "addr": "212 Lone Star Rd, Trinidad, Texas, 75163",
+    "type": "Police Station",
+    "lon": -96.088536,
+    "lat": 32.1291595,
+    "crow_mi": 11.6,
+    "drive_mi": 24.4,
+    "drive_min": 38
+   }
+  ],
+  "post_office": [
+   {
+    "name": "United States Postal Service (USPS)",
+    "addr": "106 S Colket St, Kerens, Texas, 75144",
+    "type": "Post Office",
+    "lon": -96.227842,
+    "lat": 32.13098,
+    "crow_mi": 9.1,
+    "drive_mi": 14.8,
+    "drive_min": 26
+   },
+   {
+    "name": "Kerens Post Office",
+    "addr": "Kerens, Texas",
+    "type": "Post Office",
+    "lon": -96.22783,
+    "lat": 32.13094,
+    "crow_mi": 9.1,
+    "drive_mi": 14.8,
+    "drive_min": 26
+   }
+  ],
+  "marina": [
+   {
+    "name": "Lake Athens Marina & RV Park",
+    "addr": "5401 Marina Rd, Athens, Texas, 75752",
+    "type": "Marina",
+    "lon": -95.7689737,
+    "lat": 32.2161912,
+    "crow_mi": 30.1,
+    "drive_mi": 45.1,
+    "drive_min": 62
+   },
+   {
+    "name": "Highview Marina",
+    "addr": "Ennis, Texas, 75119",
+    "type": "Marina",
+    "lon": -96.6604484,
+    "lat": 32.2641872,
+    "crow_mi": 31.7,
+    "drive_mi": 41.7,
+    "drive_min": 56
+   }
+  ],
+  "elementary": [],
+  "middle": [],
+  "high": [],
+  "indian_restaurant": [
+   {
+    "name": "Indian Village Apartments",
+    "addr": "Waxahachie, Texas, 75165",
+    "type": "Indian Food",
+    "lon": -96.832611,
+    "lat": 32.416095,
+    "crow_mi": 46.1,
+    "drive_mi": 54.6,
+    "drive_min": 67
+   },
+   {
+    "name": "Oh My Curry",
+    "addr": "909 E Davis St, Ste A, Mesquite, Texas, 75149",
+    "type": "Indian Food",
+    "lon": -96.587603,
+    "lat": 32.765744,
+    "crow_mi": 57.1,
+    "drive_mi": 75.2,
+    "drive_min": 88
+   }
+  ],
+  "hindu_temple": [],
+  "mosque": [
+   {
+    "name": "Masjid Al Tawheed",
+    "addr": "1419 Acton Ave, Duncanville, Texas, 75137",
+    "type": "Mosque",
+    "lon": -96.901123,
+    "lat": 32.634143,
+    "crow_mi": 59.3,
+    "drive_mi": 73.0,
+    "drive_min": 85
+   },
+   {
+    "name": "Masjid Taqullah",
+    "addr": "4737 Village Fair Dr, Dallas, Texas, 75224",
+    "type": "Mosque",
+    "lon": -96.826025,
+    "lat": 32.690385,
+    "crow_mi": 59.5,
+    "drive_mi": 71.2,
+    "drive_min": 83
+   }
+  ],
+  "indian_grocery_byname": [
+   {
+    "name": "Patel Brothers",
+    "addr": "1009 W Rochelle Rd, Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.957647,
+    "lat": 32.844976,
+    "crow_mi": 72.6,
+    "drive_mi": 84.0,
+    "drive_min": 98
+   },
+   {
+    "name": "Patel Brothers",
+    "addr": "Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.957422,
+    "lat": 32.845134,
+    "crow_mi": 72.6,
+    "drive_mi": 84.0,
+    "drive_min": 98
+   },
+   {
+    "name": "India Bazaar",
+    "addr": "1425 E Belt Line Rd, Richardson, Texas, 75081",
+    "type": "Grocery",
+    "lon": -96.699064,
+    "lat": 32.94699,
+    "crow_mi": 71.2,
+    "drive_mi": 85.9,
+    "drive_min": 102
+   },
+   {
+    "name": "India Bazaar",
+    "addr": "535 W Airport Fwy, Ste 110, Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.952875,
+    "lat": 32.839441,
+    "crow_mi": 72.2,
+    "drive_mi": 83.2,
+    "drive_min": 98
+   }
+  ],
+  "walmart_byname": [
+   {
+    "name": "Walmart Supercenter",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75110",
+    "type": "Department Store",
+    "lon": -96.505809,
+    "lat": 32.06639,
+    "crow_mi": 17.5,
+    "drive_mi": 19.8,
+    "drive_min": 32
+   },
+   {
+    "name": "Walmart Supercenter",
+    "addr": "1200 W Main St, Mabank, Texas, 75156",
+    "type": "Department Store",
+    "lon": -96.135425,
+    "lat": 32.33307,
+    "crow_mi": 23.5,
+    "drive_mi": 41.6,
+    "drive_min": 64
+   }
+  ],
+  "heb_byname": [
+   {
+    "name": "H-E-B",
+    "addr": "201 S 15th St, Corsicana, Texas, 75110",
+    "type": "Grocery",
+    "lon": -96.466631,
+    "lat": 32.090438,
+    "crow_mi": 15.9,
+    "drive_mi": 17.2,
+    "drive_min": 27
+   },
+   {
+    "name": "H-E-B",
+    "addr": "701 E Milam St, Mexia, Texas, 76667",
+    "type": "Grocery",
+    "lon": -96.47747,
+    "lat": 31.68567,
+    "crow_mi": 26.6,
+    "drive_mi": 38.6,
+    "drive_min": 58
+   }
+  ],
+  "lowes_byname": [
+   {
+    "name": "Lowe's",
+    "addr": "201 W Main St, Mabank, Texas, 75156",
+    "type": "Home Improvement Store",
+    "lon": -96.114574,
+    "lat": 32.328827,
+    "crow_mi": 23.5,
+    "drive_mi": 43.0,
+    "drive_min": 66
+   },
+   {
+    "name": "Lowe's",
+    "addr": "2715 S Loop 256, Palestine, Texas, 75801",
+    "type": "Home Improvement Store",
+    "lon": -95.62088,
+    "lat": 31.735003,
+    "crow_mi": 39.5,
+    "drive_mi": 43.3,
+    "drive_min": 66
+   }
+  ],
+  "home_depot_byname": [
+   {
+    "name": "The Home Depot",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Home Improvement Store",
+    "lon": -96.449814,
+    "lat": 32.065555,
+    "crow_mi": 14.4,
+    "drive_mi": 15.2,
+    "drive_min": 24
+   },
+   {
+    "name": "The Home Depot",
+    "addr": "1315 N Highway 77, Waxahachie, Texas, 75165",
+    "type": "Home Improvement Store",
+    "lon": -96.842184,
+    "lat": 32.423447,
+    "crow_mi": 46.8,
+    "drive_mi": 54.4,
+    "drive_min": 67
+   }
+  ],
+  "urgent_care_byname": [],
+  "hindu_temple_byname": [
+   {
+    "name": "Hindu Temple",
+    "addr": "761 S MacArthur Blvd, Coppell, Texas, 75019",
+    "type": "Religious Center",
+    "lon": -96.958838,
+    "lat": 32.954052,
+    "crow_mi": 78.8,
+    "drive_mi": 90.7,
+    "drive_min": 108
+   }
+  ],
+  "mosque_byname": [],
+  "named": [
+   {
+    "kind": "city",
+    "name": "Dallas (downtown)",
+    "lon": -96.797,
+    "lat": 32.7767,
+    "crow_mi": 63.4,
+    "drive_mi": 71.6,
+    "drive_min": 84
+   },
+   {
+    "kind": "city",
+    "name": "Fort Worth (downtown)",
+    "lon": -97.3308,
+    "lat": 32.7555,
+    "crow_mi": 83.4,
+    "drive_mi": 94.7,
+    "drive_min": 115
+   },
+   {
+    "kind": "city",
+    "name": "Corsicana (downtown)",
+    "lon": -96.4689,
+    "lat": 32.0954,
+    "crow_mi": 16.2,
+    "drive_mi": 17.5,
+    "drive_min": 27
+   },
+   {
+    "kind": "city",
+    "name": "Fairfield",
+    "lon": -96.153,
+    "lat": 31.7246,
+    "crow_mi": 19.4,
+    "drive_mi": 28.1,
+    "drive_min": 43
+   },
+   {
+    "kind": "city",
+    "name": "Waco (downtown)",
+    "lon": -97.1467,
+    "lat": 31.5493,
+    "crow_mi": 62.9,
+    "drive_mi": 70.4,
+    "drive_min": 88
+   },
+   {
+    "kind": "city",
+    "name": "Houston (downtown)",
+    "lon": -95.3698,
+    "lat": 29.7604,
+    "crow_mi": 162.7,
+    "drive_mi": 181.0,
+    "drive_min": 208
+   },
+   {
+    "kind": "airport",
+    "name": "DFW International Airport (DFW)",
+    "lon": -97.0403,
+    "lat": 32.8998,
+    "crow_mi": 78.5,
+    "drive_mi": 92.5,
+    "drive_min": 111
+   },
+   {
+    "kind": "airport",
+    "name": "Dallas Love Field (DAL)",
+    "lon": -96.8517,
+    "lat": 32.8471,
+    "crow_mi": 69.2,
+    "drive_mi": 77.8,
+    "drive_min": 96
+   },
+   {
+    "kind": "airport",
+    "name": "Houston Bush Intercontinental (IAH)",
+    "lon": -95.3414,
+    "lat": 29.9902,
+    "crow_mi": 148.2,
+    "drive_mi": 174.4,
+    "drive_min": 205
+   },
+   {
+    "kind": "hospital",
+    "name": "Baylor Univ. Medical Center, Dallas",
+    "lon": -96.78,
+    "lat": 32.7884,
+    "crow_mi": 63.6,
+    "drive_mi": 72.5,
+    "drive_min": 86
+   },
+   {
+    "kind": "hospital",
+    "name": "Parkland Memorial Hospital, Dallas",
+    "lon": -96.8389,
+    "lat": 32.8106,
+    "crow_mi": 66.7,
+    "drive_mi": 76.3,
+    "drive_min": 91
+   },
+   {
+    "kind": "community",
+    "name": "Irving / Las Colinas (DFW South Asian hub)",
+    "lon": -96.9489,
+    "lat": 32.814,
+    "crow_mi": 70.6,
+    "drive_mi": 83.7,
+    "drive_min": 100
+   }
+  ]
+ },
+ "arrowhead": {
+  "hospital": [
+   {
+    "name": "Integrity Urgent Care",
+    "addr": "2901 W 7th Ave, Corsicana, Texas, 75110",
+    "type": "Hospital",
+    "lon": -96.4933824,
+    "lat": 32.0769195,
+    "crow_mi": 15.5,
+    "drive_mi": 28.8,
+    "drive_min": 45
+   },
+   {
+    "name": "Navarro Regional Hospital Emergency Room",
+    "addr": "3201 West State Highway 22, Corsicana, Texas, 75110",
+    "type": "Hospital",
+    "lon": -96.5030996,
+    "lat": 32.0834259,
+    "crow_mi": 16.2,
+    "drive_mi": 29.6,
+    "drive_min": 48
+   }
+  ],
+  "clinic": [
+   {
+    "name": "Kontraband Interdiction",
+    "addr": "9011 Champions Way, Streetman, Texas, 75859",
+    "type": "Medical Clinic",
+    "lon": -96.2051776,
+    "lat": 31.9550964,
+    "crow_mi": 4.0,
+    "drive_mi": 7.8,
+    "drive_min": 22
+   },
+   {
+    "name": "BCM Innovative Therapies",
+    "addr": "3728 S US Highway 287, Corsicana, Texas, 75109",
+    "type": "Medical Clinic",
+    "lon": -96.4361,
+    "lat": 32.0631,
+    "crow_mi": 12.2,
+    "drive_mi": 26.6,
+    "drive_min": 40
+   }
+  ],
+  "pharmacy": [
+   {
+    "name": "Hilliard Drug Store",
+    "addr": "1001 NW 2nd St, Ste 300, Kerens, Texas, 75144",
+    "type": "Pharmacy",
+    "lon": -96.240516,
+    "lat": 32.130733,
+    "crow_mi": 12.5,
+    "drive_mi": 38.1,
+    "drive_min": 53
+   },
+   {
+    "name": "Walmart Pharmacy",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75109",
+    "type": "Pharmacy",
+    "lon": -96.403781,
+    "lat": 32.101047,
+    "crow_mi": 12.8,
+    "drive_mi": 29.7,
+    "drive_min": 44
+   }
+  ],
+  "grocery": [
+   {
+    "name": "Winkler Kountry Store",
+    "addr": "10620 Fm 416, Streetman, Texas, 75859",
+    "type": "Grocery",
+    "lon": -96.207758,
+    "lat": 31.93836,
+    "crow_mi": 4.0,
+    "drive_mi": 5.8,
+    "drive_min": 15
+   },
+   {
+    "name": "Food Rite",
+    "addr": "1001 NW 2nd St, Ste 400, Kerens, Texas, 75144",
+    "type": "Grocery",
+    "lon": -96.241016,
+    "lat": 32.130594,
+    "crow_mi": 12.5,
+    "drive_mi": 38.0,
+    "drive_min": 54
+   }
+  ],
+  "department_store": [
+   {
+    "name": "Walmart Photo Center",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75109",
+    "type": "Department Store",
+    "lon": -96.403739,
+    "lat": 32.101056,
+    "crow_mi": 12.8,
+    "drive_mi": 29.7,
+    "drive_min": 44
+   },
+   {
+    "name": "Corsicana Tx Sears Appliance Repair",
+    "addr": "836 W 7th Ave, Corsicana, Texas, 75110",
+    "type": "Department Store",
+    "lon": -96.471845,
+    "lat": 32.087918,
+    "crow_mi": 14.9,
+    "drive_mi": 27.3,
+    "drive_min": 43
+   }
+  ],
+  "convenience": [
+   {
+    "name": "Baker's Lakeshore Market",
+    "addr": "10414 S US Highway 287, Corsicana, Texas, 75109",
+    "type": "Convenience Store",
+    "lon": -96.217002,
+    "lat": 32.001817,
+    "crow_mi": 4.8,
+    "drive_mi": 23.5,
+    "drive_min": 44
+   },
+   {
+    "name": "I 45 Quick Stop",
+    "addr": "Streetman, Texas, 75859",
+    "type": "Convenience Store",
+    "lon": -96.347546,
+    "lat": 31.88089,
+    "crow_mi": 6.6,
+    "drive_mi": 9.8,
+    "drive_min": 23
+   }
+  ],
+  "gas": [
+   {
+    "name": "Winkler Country Store And Cafe",
+    "addr": "10642 Fm 416, Streetman, Texas, 75859",
+    "type": "Gas Station",
+    "lon": -96.207251,
+    "lat": 31.938214,
+    "crow_mi": 4.0,
+    "drive_mi": 5.8,
+    "drive_min": 15
+   },
+   {
+    "name": "Valero Energy",
+    "addr": "10414 S Highway 287, Corsicana, Texas, 75109",
+    "type": "Gas Station",
+    "lon": -96.217049,
+    "lat": 32.001725,
+    "crow_mi": 4.8,
+    "drive_mi": 23.5,
+    "drive_min": 44
+   }
+  ],
+  "bank": [
+   {
+    "name": "Community National Bank & Trust of Texas",
+    "addr": "548 Fm 416, Streetman, Texas, 75859",
+    "type": "Bank",
+    "lon": -96.181184,
+    "lat": 31.939302,
+    "crow_mi": 5.5,
+    "drive_mi": 7.4,
+    "drive_min": 18
+   },
+   {
+    "name": "Chase",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Bank",
+    "lon": -96.401049,
+    "lat": 32.068938,
+    "crow_mi": 11.0,
+    "drive_mi": 26.7,
+    "drive_min": 40
+   }
+  ],
+  "restaurant": [
+   {
+    "name": "Northshore Harbor Restuarant and Marina",
+    "addr": "10000 Spur 294, Corsicana, Texas, 75109",
+    "type": "Restaurant",
+    "lon": -96.214733,
+    "lat": 31.990009,
+    "crow_mi": 4.3,
+    "drive_mi": 24.5,
+    "drive_min": 48
+   },
+   {
+    "name": "The Harbor Restaurant",
+    "addr": "10000 Spur 294, Corsicana, Texas, 75109",
+    "type": "Restaurant",
+    "lon": -96.2147,
+    "lat": 31.990026,
+    "crow_mi": 4.3,
+    "drive_mi": 24.5,
+    "drive_min": 48
+   }
+  ],
+  "cafe": [
+   {
+    "name": "Sunset Cove Cafe",
+    "addr": "3001 Fm 2859, Corsicana, Texas, 75109",
+    "type": "Coffee Shop",
+    "lon": -96.263476,
+    "lat": 32.048333,
+    "crow_mi": 6.7,
+    "drive_mi": 35.0,
+    "drive_min": 57
+   },
+   {
+    "name": "Starbucks",
+    "addr": "2004 S US Highway 287, Corsicana, Texas, 75110",
+    "type": "Coffee Shop",
+    "lon": -96.447179,
+    "lat": 32.075507,
+    "crow_mi": 13.3,
+    "drive_mi": 25.9,
+    "drive_min": 40
+   }
+  ],
+  "bar": [
+   {
+    "name": "Opie and Yvetta's Lake Resort",
+    "addr": "340 Chelsea Dr, Streetman, Texas, 75859",
+    "type": "Bar or Pub",
+    "lon": -96.171303,
+    "lat": 31.950486,
+    "crow_mi": 6.0,
+    "drive_mi": 8.8,
+    "drive_min": 22
+   },
+   {
+    "name": "J-Bar W Industries",
+    "addr": "31 E, Kerens, Texas, 75144",
+    "type": "Bar or Pub",
+    "lon": -96.243391,
+    "lat": 32.130866,
+    "crow_mi": 12.5,
+    "drive_mi": 37.9,
+    "drive_min": 53
+   }
+  ],
+  "cinema": [],
+  "home_improvement": [
+   {
+    "name": "Aggie General",
+    "addr": "8803 S Highway 287, Corsicana, Texas, 75109",
+    "type": "Home Improvement Store",
+    "lon": -96.285778,
+    "lat": 32.010385,
+    "crow_mi": 4.1,
+    "drive_mi": 27.7,
+    "drive_min": 50
+   },
+   {
+    "name": "Richland Chambers Hardware & Lumber",
+    "addr": "381 Fm 416, Streetman, Texas, 75859",
+    "type": "Home Improvement Store",
+    "lon": -96.151646,
+    "lat": 31.940866,
+    "crow_mi": 7.2,
+    "drive_mi": 9.2,
+    "drive_min": 21
+   }
+  ],
+  "hardware": [],
+  "fire_station": [
+   {
+    "name": "287 R C Fire and Rescue VFD",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Fire Station",
+    "lon": -96.227173,
+    "lat": 31.997803,
+    "crow_mi": 4.2,
+    "drive_mi": 24.1,
+    "drive_min": 45
+   },
+   {
+    "name": "Streetman Volunteer Fire Department",
+    "addr": "219 E Main St, Streetman, Texas, 75859",
+    "type": "Fire Station",
+    "lon": -96.324695,
+    "lat": 31.877574,
+    "crow_mi": 6.0,
+    "drive_mi": 8.2,
+    "drive_min": 19
+   }
+  ],
+  "police": [
+   {
+    "name": "Kerens Police Department",
+    "addr": "200 S Colket St, Kerens, Texas, 75144",
+    "type": "Police Station",
+    "lon": -96.227706,
+    "lat": 32.130175,
+    "crow_mi": 12.6,
+    "drive_mi": 39.2,
+    "drive_min": 55
+   },
+   {
+    "name": "Highway Patrol",
+    "addr": "3030 S US Highway 287, Corsicana, Texas, 75109",
+    "type": "Police Station",
+    "lon": -96.443923,
+    "lat": 32.071379,
+    "crow_mi": 13.0,
+    "drive_mi": 25.9,
+    "drive_min": 39
+   }
+  ],
+  "post_office": [
+   {
+    "name": "United States Postal Service (USPS)",
+    "addr": "223 E Main St, Streetman, Texas, 75859",
+    "type": "Post Office",
+    "lon": -96.324293,
+    "lat": 31.87771,
+    "crow_mi": 5.9,
+    "drive_mi": 8.2,
+    "drive_min": 19
+   },
+   {
+    "name": "United States Postal Service (USPS)",
+    "addr": "230 Main St, Streetman, Texas, 75859",
+    "type": "Post Office",
+    "lon": -96.324312,
+    "lat": 31.877674,
+    "crow_mi": 5.9,
+    "drive_mi": 8.2,
+    "drive_min": 19
+   }
+  ],
+  "marina": [
+   {
+    "name": "Highview Marina",
+    "addr": "Ennis, Texas, 75119",
+    "type": "Marina",
+    "lon": -96.6604484,
+    "lat": 32.2641872,
+    "crow_mi": 31.3,
+    "drive_mi": 52.3,
+    "drive_min": 71
+   },
+   {
+    "name": "Lake Athens Marina & RV Park",
+    "addr": "5401 Marina Rd, Athens, Texas, 75752",
+    "type": "Marina",
+    "lon": -95.7689737,
+    "lat": 32.2161912,
+    "crow_mi": 34.7,
+    "drive_mi": 47.5,
+    "drive_min": 82
+   }
+  ],
+  "elementary": [],
+  "middle": [],
+  "high": [],
+  "indian_restaurant": [
+   {
+    "name": "Indian Village Apartments",
+    "addr": "Waxahachie, Texas, 75165",
+    "type": "Indian Food",
+    "lon": -96.832611,
+    "lat": 32.416095,
+    "crow_mi": 45.8,
+    "drive_mi": 65.1,
+    "drive_min": 82
+   },
+   {
+    "name": "Oh My Curry",
+    "addr": "909 E Davis St, Ste A, Mesquite, Texas, 75149",
+    "type": "Indian Food",
+    "lon": -96.587603,
+    "lat": 32.765744,
+    "crow_mi": 59.1,
+    "drive_mi": 85.7,
+    "drive_min": 103
+   }
+  ],
+  "hindu_temple": [],
+  "mosque": [
+   {
+    "name": "Masjid Al Tawheed",
+    "addr": "1419 Acton Ave, Duncanville, Texas, 75137",
+    "type": "Mosque",
+    "lon": -96.901123,
+    "lat": 32.634143,
+    "crow_mi": 59.7,
+    "drive_mi": 83.5,
+    "drive_min": 101
+   },
+   {
+    "name": "Masjid Taqullah",
+    "addr": "4737 Village Fair Dr, Dallas, Texas, 75224",
+    "type": "Mosque",
+    "lon": -96.826025,
+    "lat": 32.690385,
+    "crow_mi": 60.4,
+    "drive_mi": 81.7,
+    "drive_min": 99
+   }
+  ],
+  "indian_grocery_byname": [
+   {
+    "name": "Patel Brothers",
+    "addr": "1009 W Rochelle Rd, Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.957647,
+    "lat": 32.844976,
+    "crow_mi": 73.5,
+    "drive_mi": 94.6,
+    "drive_min": 113
+   },
+   {
+    "name": "Patel Brothers",
+    "addr": "Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.957422,
+    "lat": 32.845134,
+    "crow_mi": 73.5,
+    "drive_mi": 94.6,
+    "drive_min": 113
+   },
+   {
+    "name": "India Bazaar",
+    "addr": "535 W Airport Fwy, Ste 110, Irving, Texas, 75062",
+    "type": "Grocery",
+    "lon": -96.952875,
+    "lat": 32.839441,
+    "crow_mi": 73.0,
+    "drive_mi": 93.8,
+    "drive_min": 113
+   },
+   {
+    "name": "India Bazaar",
+    "addr": "1425 E Belt Line Rd, Richardson, Texas, 75081",
+    "type": "Grocery",
+    "lon": -96.699064,
+    "lat": 32.94699,
+    "crow_mi": 73.1,
+    "drive_mi": 96.4,
+    "drive_min": 117
+   }
+  ],
+  "walmart_byname": [
+   {
+    "name": "Walmart Supercenter",
+    "addr": "3801 W State Highway 31, Corsicana, Texas, 75110",
+    "type": "Department Store",
+    "lon": -96.505809,
+    "lat": 32.06639,
+    "crow_mi": 15.7,
+    "drive_mi": 28.5,
+    "drive_min": 46
+   },
+   {
+    "name": "Walmart Supercenter",
+    "addr": "1406 E Milam St, Mexia, Texas, 76667",
+    "type": "Department Store",
+    "lon": -96.456487,
+    "lat": 31.683539,
+    "crow_mi": 21.4,
+    "drive_mi": 28.7,
+    "drive_min": 55
+   }
+  ],
+  "heb_byname": [
+   {
+    "name": "H-E-B",
+    "addr": "201 S 15th St, Corsicana, Texas, 75110",
+    "type": "Grocery",
+    "lon": -96.466631,
+    "lat": 32.090438,
+    "crow_mi": 14.8,
+    "drive_mi": 27.1,
+    "drive_min": 42
+   },
+   {
+    "name": "H-E-B",
+    "addr": "701 E Milam St, Mexia, Texas, 76667",
+    "type": "Grocery",
+    "lon": -96.47747,
+    "lat": 31.68567,
+    "crow_mi": 22.0,
+    "drive_mi": 28.7,
+    "drive_min": 53
+   }
+  ],
+  "lowes_byname": [
+   {
+    "name": "Lowe's",
+    "addr": "201 W Main St, Mabank, Texas, 75156",
+    "type": "Home Improvement Store",
+    "lon": -96.114574,
+    "lat": 32.328827,
+    "crow_mi": 27.6,
+    "drive_mi": 67.0,
+    "drive_min": 94
+   },
+   {
+    "name": "Lowe's",
+    "addr": "2715 S Loop 256, Palestine, Texas, 75801",
+    "type": "Home Improvement Store",
+    "lon": -95.62088,
+    "lat": 31.735003,
+    "crow_mi": 41.1,
+    "drive_mi": 49.6,
+    "drive_min": 84
+   }
+  ],
+  "home_depot_byname": [
+   {
+    "name": "The Home Depot",
+    "addr": "Corsicana, Texas, 75109",
+    "type": "Home Improvement Store",
+    "lon": -96.449814,
+    "lat": 32.065555,
+    "crow_mi": 13.0,
+    "drive_mi": 25.1,
+    "drive_min": 39
+   },
+   {
+    "name": "The Home Depot",
+    "addr": "1315 N Highway 77, Waxahachie, Texas, 75165",
+    "type": "Home Improvement Store",
+    "lon": -96.842184,
+    "lat": 32.423447,
+    "crow_mi": 46.6,
+    "drive_mi": 64.9,
+    "drive_min": 82
+   }
+  ],
+  "urgent_care_byname": [],
+  "hindu_temple_byname": [
+   {
+    "name": "Hindu Temple",
+    "addr": "761 S MacArthur Blvd, Coppell, Texas, 75019",
+    "type": "Religious Center",
+    "lon": -96.958838,
+    "lat": 32.954052,
+    "crow_mi": 79.9,
+    "drive_mi": 101.2,
+    "drive_min": 123
+   }
+  ],
+  "mosque_byname": [],
+  "named": [
+   {
+    "kind": "city",
+    "name": "Dallas (downtown)",
+    "lon": -96.797,
+    "lat": 32.7767,
+    "crow_mi": 64.7,
+    "drive_mi": 82.2,
+    "drive_min": 99
+   },
+   {
+    "kind": "city",
+    "name": "Fort Worth (downtown)",
+    "lon": -97.3308,
+    "lat": 32.7555,
+    "crow_mi": 83.0,
+    "drive_mi": 105.3,
+    "drive_min": 130
+   },
+   {
+    "kind": "city",
+    "name": "Corsicana (downtown)",
+    "lon": -96.4689,
+    "lat": 32.0954,
+    "crow_mi": 15.1,
+    "drive_mi": 27.8,
+    "drive_min": 42
+   },
+   {
+    "kind": "city",
+    "name": "Fairfield",
+    "lon": -96.153,
+    "lat": 31.7246,
+    "crow_mi": 17.2,
+    "drive_mi": 23.7,
+    "drive_min": 38
+   },
+   {
+    "kind": "city",
+    "name": "Waco (downtown)",
+    "lon": -97.1467,
+    "lat": 31.5493,
+    "crow_mi": 58.4,
+    "drive_mi": 79.1,
+    "drive_min": 102
+   },
+   {
+    "kind": "city",
+    "name": "Houston (downtown)",
+    "lon": -95.3698,
+    "lat": 29.7604,
+    "crow_mi": 160.6,
+    "drive_mi": 173.3,
+    "drive_min": 196
+   },
+   {
+    "kind": "airport",
+    "name": "DFW International Airport (DFW)",
+    "lon": -97.0403,
+    "lat": 32.8998,
+    "crow_mi": 79.3,
+    "drive_mi": 103.0,
+    "drive_min": 126
+   },
+   {
+    "kind": "airport",
+    "name": "Dallas Love Field (DAL)",
+    "lon": -96.8517,
+    "lat": 32.8471,
+    "crow_mi": 70.5,
+    "drive_mi": 88.4,
+    "drive_min": 111
+   },
+   {
+    "kind": "airport",
+    "name": "Houston Bush Intercontinental (IAH)",
+    "lon": -95.3414,
+    "lat": 29.9902,
+    "crow_mi": 146.4,
+    "drive_mi": 166.7,
+    "drive_min": 193
+   },
+   {
+    "kind": "hospital",
+    "name": "Baylor Univ. Medical Center, Dallas",
+    "lon": -96.78,
+    "lat": 32.7884,
+    "crow_mi": 64.9,
+    "drive_mi": 83.0,
+    "drive_min": 101
+   },
+   {
+    "kind": "hospital",
+    "name": "Parkland Memorial Hospital, Dallas",
+    "lon": -96.8389,
+    "lat": 32.8106,
+    "crow_mi": 67.9,
+    "drive_mi": 86.9,
+    "drive_min": 106
+   },
+   {
+    "kind": "community",
+    "name": "Irving / Las Colinas (DFW South Asian hub)",
+    "lon": -96.9489,
+    "lat": 32.814,
+    "crow_mi": 71.4,
+    "drive_mi": 94.2,
+    "drive_min": 115
+   }
+  ]
+ }
+}

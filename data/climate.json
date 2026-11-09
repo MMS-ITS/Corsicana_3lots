@@ -1,0 +1,202 @@
+{
+ "bayview": {
+  "period": "1995-2024",
+  "source": "ERA5 reanalysis via Open-Meteo archive API",
+  "mean_annual_c": 19.7,
+  "jul_aug_high_c": 34.5,
+  "jan_low_c": 4.5,
+  "record_high_c": 42.6,
+  "record_low_c": -14.5,
+  "annual_precip_mm": 1036,
+  "mean_rh_pct": 69,
+  "growing_season_days": 298,
+  "freeze_days_per_year": 13.4,
+  "days_ge_35c_per_year": 38.7,
+  "monthly": [
+   {
+    "month": 1,
+    "tmax": 14.1,
+    "tmin": 4.5,
+    "precip_mm": 77.4,
+    "rh": 71.0
+   },
+   {
+    "month": 2,
+    "tmax": 16.0,
+    "tmin": 6.1,
+    "precip_mm": 89.1,
+    "rh": 72.0
+   },
+   {
+    "month": 3,
+    "tmax": 20.1,
+    "tmin": 10.0,
+    "precip_mm": 106.4,
+    "rh": 72.0
+   },
+   {
+    "month": 4,
+    "tmax": 24.3,
+    "tmin": 14.1,
+    "precip_mm": 111.6,
+    "rh": 71.0
+   },
+   {
+    "month": 5,
+    "tmax": 28.4,
+    "tmin": 19.0,
+    "precip_mm": 122.6,
+    "rh": 73.0
+   },
+   {
+    "month": 6,
+    "tmax": 31.9,
+    "tmin": 23.0,
+    "precip_mm": 82.5,
+    "rh": 71.0
+   },
+   {
+    "month": 7,
+    "tmax": 34.1,
+    "tmin": 24.9,
+    "precip_mm": 52.5,
+    "rh": 65.0
+   },
+   {
+    "month": 8,
+    "tmax": 34.8,
+    "tmin": 25.2,
+    "precip_mm": 58.2,
+    "rh": 61.0
+   },
+   {
+    "month": 9,
+    "tmax": 31.4,
+    "tmin": 21.8,
+    "precip_mm": 57.8,
+    "rh": 64.0
+   },
+   {
+    "month": 10,
+    "tmax": 26.0,
+    "tmin": 15.9,
+    "precip_mm": 99.2,
+    "rh": 66.0
+   },
+   {
+    "month": 11,
+    "tmax": 19.6,
+    "tmin": 10.2,
+    "precip_mm": 88.8,
+    "rh": 71.0
+   },
+   {
+    "month": 12,
+    "tmax": 15.2,
+    "tmin": 6.0,
+    "precip_mm": 90.3,
+    "rh": 73.0
+   }
+  ]
+ },
+ "arrowhead": {
+  "period": "1995-2024",
+  "source": "ERA5 reanalysis via Open-Meteo archive API",
+  "mean_annual_c": 19.9,
+  "jul_aug_high_c": 34.6,
+  "jan_low_c": 4.6,
+  "record_high_c": 42.3,
+  "record_low_c": -13.3,
+  "annual_precip_mm": 1044,
+  "mean_rh_pct": 69,
+  "growing_season_days": 297,
+  "freeze_days_per_year": 12.8,
+  "days_ge_35c_per_year": 41.4,
+  "monthly": [
+   {
+    "month": 1,
+    "tmax": 14.2,
+    "tmin": 4.6,
+    "precip_mm": 75.9,
+    "rh": 70.0
+   },
+   {
+    "month": 2,
+    "tmax": 16.1,
+    "tmin": 6.3,
+    "precip_mm": 87.8,
+    "rh": 72.0
+   },
+   {
+    "month": 3,
+    "tmax": 20.2,
+    "tmin": 10.2,
+    "precip_mm": 104.4,
+    "rh": 71.0
+   },
+   {
+    "month": 4,
+    "tmax": 24.3,
+    "tmin": 14.3,
+    "precip_mm": 114.2,
+    "rh": 70.0
+   },
+   {
+    "month": 5,
+    "tmax": 28.5,
+    "tmin": 19.2,
+    "precip_mm": 124.6,
+    "rh": 73.0
+   },
+   {
+    "month": 6,
+    "tmax": 32.1,
+    "tmin": 23.2,
+    "precip_mm": 85.1,
+    "rh": 70.0
+   },
+   {
+    "month": 7,
+    "tmax": 34.3,
+    "tmin": 25.1,
+    "precip_mm": 52.9,
+    "rh": 64.0
+   },
+   {
+    "month": 8,
+    "tmax": 34.9,
+    "tmin": 25.4,
+    "precip_mm": 60.9,
+    "rh": 61.0
+   },
+   {
+    "month": 9,
+    "tmax": 31.5,
+    "tmin": 22.0,
+    "precip_mm": 57.6,
+    "rh": 64.0
+   },
+   {
+    "month": 10,
+    "tmax": 26.1,
+    "tmin": 16.2,
+    "precip_mm": 98.8,
+    "rh": 66.0
+   },
+   {
+    "month": 11,
+    "tmax": 19.7,
+    "tmin": 10.5,
+    "precip_mm": 90.1,
+    "rh": 70.0
+   },
+   {
+    "month": 12,
+    "tmax": 15.3,
+    "tmin": 6.2,
+    "precip_mm": 91.1,
+    "rh": 72.0
+   }
+  ]
+ }
+}
