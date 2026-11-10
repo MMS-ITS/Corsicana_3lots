@@ -20,7 +20,8 @@ TR = Transformer.from_crs(4326, 26914, always_xy=True)
 PAL = {"teal": "#0f766e", "navy": "#1e3a8a", "amber": "#f59e0b", "coral": "#ef4444",
        "green": "#16a34a", "purple": "#7c3aed", "sky": "#0ea5e9", "slate": "#334155",
        "lake": "#2563eb", "gold": "#facc15", "pink": "#db2777"}
-LOTNAME = {"bayview": "11 Bayview Cir", "arrowhead": "5001 Arrowhead Pt"}
+LOTNAME = {"bayview": "11 Bayview Cir", "arrowhead": "5001 Arrowhead Pt",
+           "lot442": "Lot 442 Waters Edge", "lot411": "Lot 411 Sailboat", "lot441": "Lot 441 Waters Edge"}
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 7, "axes.titlesize": 8,
                      "axes.labelsize": 7, "xtick.labelsize": 6, "ytick.labelsize": 6,
                      "savefig.dpi": 300, "figure.dpi": 100})

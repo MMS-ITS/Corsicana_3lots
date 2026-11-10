@@ -3,8 +3,21 @@ data/flood.json
 data/bathymetry.json
 data/parcels.json
 data/stratmap_raw_*.json
+data/*/flood.json
+data/*/bathymetry.json
+data/*/parcels.json
+data/*/stratmap_raw_*.json
 # intermediate HTML (embeds local font paths)
 out/report.html
+out/*/*.html
+# Shores listing galleries: keep only the photos the report uses
+assets/shores3/listing/**/*.jpg
+!assets/shores3/listing/lot442/5680755_982.jpg
+!assets/shores3/listing/lot442/5680755_490.jpg
+!assets/shores3/listing/lot411/gal_3yd-NTREIS-21334950_0.jpg
+!assets/shores3/listing/lot411/gal_3yd-NTREIS-21334950_30.jpg
+!assets/shores3/listing/lot441/gal_3yd-NTREIS-21407991_0.jpg
+!assets/shores3/listing/lot441/gal_3yd-NTREIS-21407991_25.jpg
 __pycache__/
 *.pyc
 .venv/

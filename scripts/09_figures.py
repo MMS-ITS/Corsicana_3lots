@@ -25,7 +25,7 @@ from matplotlib.colors import LightSource, Normalize
 from PIL import Image
 from scipy import ndimage
 
-from common import ASSETS, DATA, FIG, FT2M, M2FT, load, local_xy
+from common import ASSETS, DATA, FIG, FT2M, LOTS as LOTCFG, LOTSET, M2FT, load, local_xy
 from figlib import (HALO, HALO_D, LOTNAME, PAL, aerial_local, centre, dem_local, grids_rot, lonlat_lf,
                     north_arrow, rot, save, scale_bar)
 
@@ -33,10 +33,17 @@ T = load("terrain.json")
 P = load("parcels.json")
 FL = load("flood.json")
 SV = load("services.json")
-LOTS = ["bayview", "arrowhead"]
-ROADLBL = {"bayview": ["White Rock Rd", "Bayview Cir"], "arrowhead": ["Arrowhead Pt"]}
+LOTS = list(LOTCFG)
+ROADLBL = {"bayview": ["White Rock Rd", "Bayview Cir"], "arrowhead": ["Arrowhead Pt"],
+           "lot442": ["Waters Edge Dr"], "lot441": ["Waters Edge Dr"], "lot411": ["Sailboat Dr"]}
+# lots that need an on-site septic system (drip field drawn on the envelope figure)
+SEPTIC = {"bayview": False, "arrowhead": True, "lot442": True, "lot411": True, "lot441": True}
 POOL, FLOOD100, FLOWAGE = 315.0, 318.0, 320.0
-LAKE_NOW = 312.17        # TWDB daily level, 8 Nov 2026
+# TWDB daily level: 312.17 ft on 8 Nov 2026 (two-lot report), 312.16 ft on 9 Nov 2026 (Shores re-check)
+LAKE_NOW = 312.17 if LOTSET == "two" else 312.16
+LAKE_DATE = "8 Nov 2026" if LOTSET == "two" else "9 Nov 2026"
+# label for the water body on the plan: the Shores lots sit on dug canals, not natural coves
+WATERLBL = "Richland-Chambers\nLake (cove)" if LOTSET == "two" else "canal\n(Richland-Chambers Lake)"
 
 
 def theta_of(key):
@@ -152,7 +159,8 @@ def plan(key):
     ax.text(hi[0] + 8, hi[1] + 2, f"High {r['elev']['max_ft']:.1f}′", fontsize=5.2, ha="left", va="center",
             path_effects=HALO, zorder=17)
     ax.plot(*lo, marker="v", ms=6, color=PAL["sky"], mec="black", mew=0.6, zorder=17)
-    ax.text(lo[0], lo[1] - 9, f"Low {r['elev']['min_land_ft']:.1f}′", fontsize=5.2, ha="center",
+    # to the land side of the marker (water is on the right in these rotated plans), clear of the water-line length label
+    ax.text(lo[0] - 7, lo[1] - 3, f"Low {r['elev']['min_land_ft']:.1f}′", fontsize=5.2, ha="right", va="top",
             path_effects=HALO, zorder=17)
     if r["slope"]["max50_line_lf"]:
         a_, b_ = rot(r["slope"]["max50_line_lf"], th)
@@ -173,13 +181,16 @@ def plan(key):
     wat = Z[::8, ::8] < 313.5
     best, bxy = -1, None
     for uu, vv in zip(UU[wat], VV[wat]):
-        if not (u0 + 25 < uu < u1 - 25 and v0 + 12 < vv < v1 - 0.30 * (v1 - v0)):
+        mu = max(25, 0.13 * (u1 - u0))   # label is ~2 lines wide: keep its centre well inside the frame
+        if not (u0 + mu < uu < u1 - mu and v0 + 12 < vv < v1 - 0.30 * (v1 - v0)):
+            continue
+        if uu > u1 - 0.22 * (u1 - u0) and vv > v1 - 0.52 * (v1 - v0):   # keep clear of the north arrow
             continue
         dd = lotp.exterior.distance(_Pt(uu, vv))
         if dd > best:
             best, bxy = dd, (uu, vv)
     if bxy:
-        ax.text(bxy[0], bxy[1], "Richland-Chambers\nLake (cove)", fontsize=5.2, color="white", ha="center",
+        ax.text(bxy[0], bxy[1], WATERLBL, fontsize=5.2, color="white", ha="center",
                 va="center", style="italic", path_effects=HALO_D, zorder=20)
     ax.text(s[0, 0] + 3, s[0, 1] - 4, "road ℄", fontsize=4.8, color="white", ha="left", va="top",
             path_effects=HALO_D, zorder=20)
@@ -260,7 +271,7 @@ def section(key):
                  fontsize=5.0, ha="center", color="#92400e", path_effects=HALO, clip_on=True)
     axB.text(x0d + 2, POOL + 0.25, "315 normal pool", fontsize=4.6, color=PAL["sky"], va="bottom")
     axB.text(x0d + 2, FLOWAGE + 0.25, "320 TRWD flowage line", fontsize=4.6, color="#b45309", va="bottom")
-    axB.text(x0d + span - 1, LAKE_NOW - 0.4, f"lake {LAKE_NOW:.1f} (8 Nov 2026)", fontsize=4.6, color="white",
+    axB.text(x0d + span - 1, LAKE_NOW - 0.4, f"lake {LAKE_NOW:.1f} ({LAKE_DATE})", fontsize=4.6, color="white",
              ha="right", va="top")
     # ---- right: vertically exaggerated, all annotations (factor computed from the drawn axes)
     axC = fig.add_axes([0.535, 0.10, 0.455, 0.80])
@@ -337,7 +348,7 @@ def envelope(key):
         q = rot(poly, th)
         ax.fill(q[:, 0], q[:, 1], facecolor=(0.09, 0.64, 0.29, 0.20), edgecolor=PAL["green"], lw=1.0, ls="--",
                 zorder=5)
-    if key == "arrowhead":
+    if SEPTIC[key]:
         for poly in r["drip"]["poly_lf"]:
             q = rot(poly, th)
             ax.fill(q[:, 0], q[:, 1], facecolor=(0.05, 0.65, 0.91, 0.14), edgecolor=PAL["sky"], lw=0.6,
@@ -396,7 +407,7 @@ def envelope(key):
            plt.Line2D([], [], color=PAL["navy"], lw=0.8, ls=(0, (3, 2)), label="1-storey 84×56 ft option"),
            plt.Line2D([], [], color=PAL["amber"], ls="--", label="320′ TRWD flowage"),
            plt.Line2D([], [], color=PAL["sky"], ls="--", label="315′ normal pool")]
-    if key == "arrowhead":
+    if SEPTIC[key]:
         leg.append(mpatches.Patch(facecolor=(0.05, 0.65, 0.91, 0.18), edgecolor=PAL["sky"], hatch="....",
                                   label="Drip-field area (≥50′ from pool)"))
     lg = ax.legend(handles=leg, loc="lower right", fontsize=4.4, framealpha=0.9, borderpad=0.35,
@@ -502,8 +513,14 @@ def fema(key):
     pan = FL[key]["panel"][0]
     ax.set_xlim(-half * 1.0, half * 1.0); ax.set_ylim(-yh, yh); ax.set_aspect("equal")
     ax.axis("off")
-    ax.text(-half * 0.97, yh * 0.93, f"FEMA NFHL · FIRM panel {pan['FIRM_PAN']} (eff. 5 Jun 2012)\n"
-            f"Zone A (no BFE) along shore · Zone X elsewhere · {r['zoneA_pct_of_lot']:.0f}% of lot in Zone A",
+    inview = bool((ov[..., 3] > 0.12).any())
+    if r["zoneA_pct_of_lot"] > 0:
+        zline = f"Zone A (no BFE) along shore · Zone X elsewhere · {r['zoneA_pct_of_lot']:.0f}% of lot in Zone A"
+    elif inview:
+        zline = "Zone A (no BFE) in the water · whole lot in Zone X"
+    else:
+        zline = "No Zone A in this view: the lot and this canal are Zone X"
+    ax.text(-half * 0.97, yh * 0.93, f"FEMA NFHL · FIRM panel {pan['FIRM_PAN']} (eff. 5 Jun 2012)\n{zline}",
             fontsize=5.2, va="top", color="black",
             bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="none", alpha=0.88))
     north_arrow(ax, half * 0.93, -yh * 0.05, yh * 0.28)
@@ -563,7 +580,7 @@ def bathy(key):
     lk = load("bathymetry.json")["lake"]
     ax.text(-half * 0.98, yh * 0.95,
             f"TWDB Dec-2018 survey · depth (ft) below 315′ normal pool\n"
-            f"Off this lot ({lab} of frontage): mean {w150['mean_depth_ft']:.0f} ft, max {w150['max_depth_ft']:.0f} ft"
+            f"Off this lot ({lab} of frontage): mean {w150['mean_depth_ft']:.1f} ft, max {w150['max_depth_ft']:.1f} ft"
             f"\nLake: mean {lk['mean_depth_ft']:.0f} ft, max {lk['max_depth_ft']:.0f} ft · now ~{POOL-LAKE_NOW:.1f} ft below pool",
             fontsize=5.0, va="top", bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="none", alpha=0.9))
     sm = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
@@ -628,7 +645,14 @@ def aerial_pics(key):
 FLY = {"bayview": [(150, "from the cove (SE)"), (60, "from the east"), (330, "from the road (NW)"),
                    (240, "from the west")],
        "arrowhead": [(115, "from the cove (ESE)"), (200, "from the south"), (300, "from the road (WNW)"),
-                     (25, "from the north")]}
+                     (25, "from the north")],
+       # The Shores: camera azimuth = direction the camera stands in, seen from the lot
+       "lot442": [(255, "from the canal (WSW)"), (170, "from the south"), (75, "from the road (ENE)"),
+                  (345, "from the north")],
+       "lot441": [(300, "from the canal (WNW)"), (210, "from the south-west"), (120, "from the road (ESE)"),
+                  (30, "from the north-east")],
+       "lot411": [(110, "from the canal (ESE)"), (200, "from the south"), (285, "from the road (WNW)"),
+                  (20, "from the north")]}
 
 
 def fly(key):
@@ -732,8 +756,10 @@ def region():
     for n, lo, la in towns:
         ax.plot(lo * k, la, "s", ms=2.6, color="#334155", zorder=6)
         ax.text(lo * k + 0.01, la + 0.012, n, fontsize=5.2, color="#334155", zorder=6, path_effects=HALO)
-    for key, lab, dx, dy in (("bayview", "A · 11 Bayview Cir\n(White Rock)", 0.025, 0.015),
-                             ("arrowhead", "B · 5001 Arrowhead Pt\n(Rustling Oaks)", -0.02, -0.055)):
+    stars = ((("bayview", "A · 11 Bayview Cir\n(White Rock)", 0.025, 0.015),
+              ("arrowhead", "B · 5001 Arrowhead Pt\n(Rustling Oaks)", -0.02, -0.055)) if LOTSET == "two" else
+             (("lot411", "The Shores · Lots 442, 441, 411\n(1 km apart, north shore)", 0.025, 0.012),))
+    for key, lab, dx, dy in stars:
         lo, la = T[key]["centroid_lonlat"]
         ax.plot(lo * k, la, marker="*", ms=12, color=PAL["coral"], mec="white", mew=0.7, zorder=8)
         ax.text(lo * k + dx, la + dy, lab, fontsize=5.6, color=PAL["coral"], fontweight="bold", zorder=9,
@@ -777,7 +803,7 @@ def region():
         if big:
             ins.plot(lo * kt, la, "o", ms=1.8, color=PAL["slate"])
             ins.text(lo * kt + 0.3, la + 0.1, name, fontsize=3.8, color=PAL["slate"])
-    lo, la = T["bayview"]["centroid_lonlat"]
+    lo, la = T[LOTS[0]]["centroid_lonlat"]
     ins.plot(lo * kt, la, "*", ms=7, color=PAL["coral"], mec="white", mew=0.4)
     ins.set_aspect("equal"); ins.axis("off")
     ins.set_xlim(-106.8 * kt, -93.4 * kt); ins.set_ylim(25.7, 36.6)
