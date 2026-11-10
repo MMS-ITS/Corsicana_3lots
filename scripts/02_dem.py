@@ -23,16 +23,15 @@ os.environ.setdefault("GDAL_DISABLE_READDIR_ON_OPEN", "EMPTY_DIR")
 os.environ.setdefault("CPL_VSIL_CURL_ALLOWED_EXTENSIONS", ".tif")
 
 BASE = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects"
-TILES = {
-    "bayview": {
-        "2022": f"{BASE}/TX_2022NorthCentral_ContributedProcessing_D25/TIFF/USGS_1M_14_x76y355_TX_2022NorthCentral_ContributedProcessing_D25.tif",
-        "2018": f"{BASE}/TX_RedRiver_3Area_B1_2018/TIFF/USGS_one_meter_x76y355_TX_RedRiver_3Area_B1_2018.tif",
-    },
-    "arrowhead": {
-        "2022": f"{BASE}/TX_2022NorthCentral_ContributedProcessing_D25/TIFF/USGS_1M_14_x75y354_TX_2022NorthCentral_ContributedProcessing_D25.tif",
-        "2018": f"{BASE}/TX_RedRiver_3Area_B1_2018/TIFF/USGS_one_meter_x75y354_TX_RedRiver_3Area_B1_2018.tif",
-    },
-}
+
+
+def tile_urls(cx, cy):
+    """USGS 1 m tiles are 10 km squares named by the UTM 14N km/10 of their NW corner."""
+    tx, ty = int(cx // 10000), int(cy // 10000) + 1
+    return {
+        "2022": f"{BASE}/TX_2022NorthCentral_ContributedProcessing_D25/TIFF/USGS_1M_14_x{tx}y{ty}_TX_2022NorthCentral_ContributedProcessing_D25.tif",
+        "2018": f"{BASE}/TX_RedRiver_3Area_B1_2018/TIFF/USGS_one_meter_x{tx}y{ty}_TX_RedRiver_3Area_B1_2018.tif",
+    }
 HALF_LOT = 260.0      # m half-width of the detailed window
 HALF_CTX = 1400.0     # m half-width of the context window (read at 1 m, stored at 3 m)
 
@@ -62,6 +61,7 @@ def main():
     tr = Transformer.from_crs(4326, 26914, always_xy=True)
     for key, rec in P.items():
         cx, cy = tr.transform(rec["centroid"]["lon"], rec["centroid"]["lat"])
+        TILES = {key: tile_urls(cx, cy)}
         for src, url in TILES[key].items():
             a, x0, y0, res, tags = read_window(url, cx, cy, HALF_LOT)
             z = a * M2FT

@@ -2,7 +2,7 @@
 destinations the category search handles poorly: schools, hospitals, urgent
 care, Indian/South Asian community anchors, boat ramps/marinas."""
 import importlib.util, time
-from common import get, haversine_mi, load, save
+from common import LOTS, get, haversine_mi, load, save
 spec = importlib.util.spec_from_file_location('ctx', '04_context.py'); ctx = importlib.util.module_from_spec(spec); spec.loader.exec_module(ctx)
 GEO = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates"
 Q = {
@@ -19,7 +19,9 @@ for key, rec in P.items():
     lon, lat = rec['centroid']['lon'], rec['centroid']['lat']
     res = {}
     for grp, items in Q.items():
-        if grp.startswith('schools_') and not grp.endswith(key):
+        # each lot uses the school group of its own ISD (common.LOTS[key]["isd"])
+        isd_grp = "schools_bayview" if LOTS[key].get("isd") == "Mildred" else "schools_arrowhead"
+        if grp.startswith('schools_') and grp != isd_grp:
             continue
         rows = []
         for text in items:

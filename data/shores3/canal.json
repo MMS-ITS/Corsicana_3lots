@@ -1,0 +1,23 @@
+{
+ "lot442": {
+  "lake_edge_ft": 60.0,
+  "shore_to_canal_ft": 0.0,
+  "canal_width_at_waterline_ft": 110.0,
+  "canal_width_315_ft": 113.0,
+  "c315_within_45ft_ft": 156.0
+ },
+ "lot411": {
+  "lake_edge_ft": 95.2,
+  "shore_to_canal_ft": 33.0,
+  "canal_width_at_waterline_ft": 7.0,
+  "canal_width_315_ft": 96.0,
+  "c315_within_45ft_ft": 182.6
+ },
+ "lot441": {
+  "lake_edge_ft": 104.9,
+  "shore_to_canal_ft": 0.0,
+  "canal_width_at_waterline_ft": 89.0,
+  "canal_width_315_ft": 92.0,
+  "c315_within_45ft_ft": 197.8
+ }
+}

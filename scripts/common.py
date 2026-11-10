@@ -14,10 +14,16 @@ import urllib.parse
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA = os.path.join(ROOT, "data")
-FIG = os.path.join(ROOT, "figures")
-ASSETS = os.path.join(ROOT, "assets")
-OUT = os.path.join(ROOT, "out")
+# LOTSET selects which lots the pipeline works on. The default ("two") is the
+# 8 Nov 2026 report on 11 Bayview Cir and 5001 Arrowhead Pt; "shores3" is the
+# 10 Nov 2026 re-check of The Shores lots 442, 411 and 441. Each set keeps its
+# own data/, figures/ and assets/ sub-folder so both reports stay rebuildable.
+LOTSET = os.environ.get("LOTSET", "two")
+_SUB = "" if LOTSET == "two" else LOTSET
+DATA = os.path.join(ROOT, "data", _SUB)
+FIG = os.path.join(ROOT, "figures", _SUB)
+ASSETS = os.path.join(ROOT, "assets", _SUB)
+OUT = os.path.join(ROOT, "out", _SUB)
 for _d in (DATA, FIG, ASSETS, OUT):
     os.makedirs(_d, exist_ok=True)
 
@@ -35,22 +41,47 @@ FT2M = 0.3048
 
 # The two subject lots. Seeds come from the Esri World Geocoder (PointAddress for
 # Arrowhead, interpolated StreetAddress for Bayview) and only aim the parcel search.
-LOTS = {
-    "bayview": {
-        "label": "11 Bayview Cir, Corsicana, TX 75109",
-        "short": "11 Bayview Cir",
-        "num": "11", "street": "BAYVIEW",
-        "seed": (-96.217414, 32.001878),
-        "city": "Corsicana",
+LOTSETS = {
+    "two": {
+        "bayview": {
+            "label": "11 Bayview Cir, Corsicana, TX 75109",
+            "short": "11 Bayview Cir",
+            "num": "11", "street": "BAYVIEW",
+            "seed": (-96.217414, 32.001878),
+            "city": "Corsicana", "geo": "63254", "isd": "Mildred",
+        },
+        "arrowhead": {
+            "label": "5001 Arrowhead Point, Streetman, TX 75859",
+            "short": "5001 Arrowhead Pt",
+            "num": "5001", "street": "ARROWHEAD",
+            "seed": (-96.273153, 31.951865),
+            "city": "Streetman", "geo": "56587", "isd": "Fairfield",
+        },
     },
-    "arrowhead": {
-        "label": "5001 Arrowhead Point, Streetman, TX 75859",
-        "short": "5001 Arrowhead Pt",
-        "num": "5001", "street": "ARROWHEAD",
-        "seed": (-96.273153, 31.951865),
-        "city": "Streetman",
+    # The Shores on Richland Chambers Lake (gated, north shore off US-287).
+    # Seeds are points inside each CAD parcel; "geo" is the Navarro CAD parcel ID.
+    "shores3": {
+        "lot442": {
+            "label": "Lot 442 Waters Edge Dr, Corsicana, TX 75109",
+            "short": "Lot 442 Waters Edge Dr",
+            "seed": (-96.2394, 31.9951),
+            "city": "Corsicana", "geo": "64391", "isd": "Mildred",
+        },
+        "lot411": {
+            "label": "Lot 411 Sailboat Dr, Corsicana, TX 75109",
+            "short": "Lot 411 Sailboat Dr",
+            "seed": (-96.23134, 31.99387),
+            "city": "Corsicana", "geo": "64288", "isd": "Mildred",
+        },
+        "lot441": {
+            "label": "Lot 441 Waters Edge Dr, Corsicana, TX 75109",
+            "short": "Lot 441 Waters Edge Dr",
+            "seed": (-96.23967, 31.99485),
+            "city": "Corsicana", "geo": "64390", "isd": "Mildred",
+        },
     },
 }
+LOTS = LOTSETS[LOTSET]
 
 
 def get(url, params=None, timeout=90, retries=4, as_json=True, **kw):

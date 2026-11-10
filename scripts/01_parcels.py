@@ -19,7 +19,7 @@ from common import LOTS, get, local_xy, save
 
 SVC = ("https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/"
        "stratmap_land_parcels_48_most_recent/MapServer/identify")
-TARGET_GEO = {"bayview": "63254", "arrowhead": "56587"}
+TARGET_GEO = {k: v["geo"] for k, v in LOTS.items()}
 HALF = 0.0075  # degrees half-window for neighbour harvest (~800 m)
 
 
