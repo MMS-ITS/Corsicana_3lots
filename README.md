@@ -1,5 +1,32 @@
 # Richland-Chambers lakefront lots: due diligence
 
+## 11 Bayview Cir and 5001 Arrowhead Pt: largest home, private dock, first steps (10 Nov 2026)
+
+**Report:** [`Bayview-Arrowhead-BigHome-Dock-DD-and-Emails_10-Nov-26_Claude-Opus-5.5.pdf`](Bayview-Arrowhead-BigHome-Dock-DD-and-Emails_10-Nov-26_Claude-Opus-5.5.pdf), 8 letter-size pages: summary, one feasibility page per lot, first steps and costs, 14 e-mail drafts, glossary and end note.
+Markdown copies: [`docs/twolots/PLAN.md`](docs/twolots/PLAN.md), [`docs/twolots/EMAILS.md`](docs/twolots/EMAILS.md).
+
+| | A · 11 Bayview Cir (White Rock) | B · 5001 Arrowhead Pt (Rustling Oaks) |
+|---|---|---|
+| Largest house (test fit) | 116×52 ft footprint, ≈9,400 sf heated on 2 storeys | 112×56 ft, ≈8,900–9,900 sf heated |
+| What limits it | set-backs on a wedge-shaped lot + Zone A (HOA sewer, no septic) | the septic drip field (600 gal/day → 6,000 sf) |
+| Largest dock (TRWD) | 1,200 sf; fits 56×21 ft in a basin ≈98 ft across | 918 sf; fits 45×20 ft after a 10-ft walkway |
+| Depth over the lift | not surveyed: sound it before buying | 6.1 ft at full pool, 3.2 ft today (TWDB 2018) |
+| Spend before committing | ≈$2.2–4.4k | ≈$3.0–5.9k (adds the septic evaluation) |
+
+Main findings:
+- White Rock's sewer plant (TCEQ permit for 8,000 gal/day) broke its effluent limits in 2023–24. The TCEQ agreed order deferred most of the penalty for inability to pay. Ask the HOA about assessments and spare capacity.
+- Rustling Oaks Ph II CC&Rs (1991): $12/month dues, 1,600 sf minimum, no owner wells, and outside walls and roof finished within 120 days of starting.
+- The 1990 Phase II plat means TRWD's 1-acre septic rule does not apply to Lot 33.
+- Two neighbours of Lot 11 built 977- and 1,024-sf boathouses on the same basin in 2023.
+
+Rebuild (two-lot set, the default `LOTSET`):
+```bash
+cd scripts && export MPLCONFIGDIR=/tmp/mpl
+python 15_twolots_bigbuild.py        # largest house + dock search, about 3 min -> data/bigbuild.json, figures/bigbuild_*, dockxs_*
+python 16_twolots_report.py 100      # the PDF, docs/twolots/*.md and out/twolots/preview/
+```
+`python 15_twolots_bigbuild.py dock` re-runs only the dock search; `fig` only redraws.
+
 ## The Shores lots 442, 411, 441: revised due diligence (10 Nov 2026)
 
 **Report:** [`The-Shores-3-Lots-Revised-Due-Diligence_10-Nov-26_Claude-Opus-5.5.pdf`](The-Shores-3-Lots-Revised-Due-Diligence_10-Nov-26_Claude-Opus-5.5.pdf), 10 letter-size pages.
